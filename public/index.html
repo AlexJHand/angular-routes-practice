@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="vendors/angular.min.js"></script>
+    <script src="vendors/angular-route.min.js"></script>
+    <script src="scripts/client.js"></script>
+    <script src="scripts/controllers/home.controller.js"></script>
+    <script src="scripts/controllers/brock.controller.js"></script>
+    <script src="scripts/controllers/spacedog.controller.js"></script>
+    <script src="scripts/controllers/thisguy.controller.js"></script>
+    <base href="/">
+    <title>Angular Routes Practice</title>
+</head>
+
+<body ng-app="myApp">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/brock">Brock Samson</a></li>
+                <li><a href="/spacedog">Spock's Friend</a></li>
+                <li><a href="/thisguy">This guy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <ng-view></ng-view>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>
