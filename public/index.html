@@ -12,19 +12,36 @@
     <script src="scripts/controllers/brock.controller.js"></script>
     <script src="scripts/controllers/spacedog.controller.js"></script>
     <script src="scripts/controllers/thisguy.controller.js"></script>
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <base href="/">
     <title>Angular Routes Practice</title>
 </head>
 
 <body ng-app="myApp">
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/brock">Brock Samson</a></li>
-                <li><a href="/spacedog">Spock's Friend</a></li>
-                <li><a href="/thisguy">This guy</a></li>
-            </ul>
+    <header class="container">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsedNav">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="incon-bar"></span>
+                    <span class="incon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">
+                </a>
+                <p class="navbar-text"><strong>Hero's Home Page</strong></p>
+                </div>
+                <div class="collapse navbar-collapse" id="collapsedNav">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/">Home</a></li>
+                        <li><a href="/brock">Brock Samson</a></li>
+                        <li><a href="/spacedog">Spock's Friend</a></li>
+                        <li><a href="/thisguy">This guy</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
